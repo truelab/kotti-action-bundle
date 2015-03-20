@@ -60,4 +60,9 @@ class LinkAction extends Document
     {
         return $this->target;
     }
+
+    public function getTargetHtml()
+    {
+        return $this->target ? 'target='.$this->target : '';
+    }
 }

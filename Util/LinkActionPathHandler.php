@@ -37,7 +37,7 @@ class LinkActionPathHandler implements PathHandlerInterface
             $url = $context->getLink();
 
             if(!$this->isAbsoluteUrl($url)) {
-                return $templateApi->frontendDomain($url);
+                return $templateApi->baseUrl($url);
             }else{
                 return $url;
             }
